@@ -1,0 +1,98 @@
+@media screen and (min-width: 620px) {
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+// h1 {
+// 	@include font(1);
+// }	
+// ===================================
+// DASHBOARD
+// ===================================
+	
+.dashboard {
+	margin: 70px auto;
+	.icon-container {
+		width: 700px;
+		margin: 0 auto;
+		.dashcon {
+			margin: 20px auto;
+			margin: 3% 4.7%;
+			display: inline-block;
+			.icon {
+				display: block;
+				width: 150px;
+				&:hover {
+					filter: invert(80%);
+					-webkit-filter: invert(80%);
+					-moz-filter: invert(80%);
+					-o-filter: invert(80%);
+					-ms-filter: invert(80%);
+				}	
+			}
+		}
+	}
+}	
+
+// ===================================
+// COSTUME GALLERY
+// ===================================
+
+.gallery {
+	width: 90%;
+	.item-foot {
+		float: left;
+		margin: 20px;
+	}
+}
+
+// ===================================
+// ITEM PAGE
+// ===================================
+.item-container {
+	width: 80%;
+	.main-item {
+		.main-phot {
+			width: 100%;
+		}
+	}
+	.side-images {
+		.sub-item {
+			width: 20.2%;
+			margin: 5.6% 5.6% 5.6% 0;
+			&:nth-of-type(4) {
+				margin-right: 0;
+			}
+		}
+	}
+	.donation-info {
+		margin: 50px auto;
+		width: 90%;
+		.donate-icon4 {
+			width: 100px;
+			display: block;
+			margin: 0 auto 20px auto;
+		}	
+		p {
+			@include font(1);
+			width: 90%;
+			margin: 0 auto;
+		}
+	}	
+}
+
+// ===================================
+// SUCCESS
+// ===================================
+
+.success-container {
+	.success-box {
+		width: 90%;
+		max-width: 500px;
+		height: 440px;
+	}	
+}
+
+}

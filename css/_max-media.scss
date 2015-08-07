@@ -1,0 +1,249 @@
+@media screen and (min-width: 1100px) {
+
+.paragraph {
+	width: 55%;
+	margin: 0 auto;
+	// text-align: center;
+}
+
+// ===================================
+// HOME/BROWSE
+// ===================================
+
+.centered {
+	h2 {
+		margin-top: 290px;
+	}
+	.costumes, .shoes, .accessories {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+.partners {
+	.partner-logo {
+		width: 100px;
+		border-radius: 100%;
+	}
+}
+
+.donate {
+	.donate-icon {
+		width: 100px;
+	}
+}
+
+
+
+// ===================================
+// COSTUME GALLERY
+// ===================================
+
+.gallery {
+	padding-left: 70px;
+	.item-foot {
+		width: 22.7%;
+		float: left;
+		// margin-right: 2%;
+		margin: 20px;
+	}
+}
+
+// ===================================
+// ITEM PAGE
+// ===================================
+.item-container {
+	width: 85%;
+	margin: 70px auto;
+	.main-item {
+		float: left;
+		width: 55%;
+		margin-left: 14%;
+		.main-photo {
+			width: 100%;
+		}
+	}
+	.side-images {
+		.sub-item {
+			width: 23%;
+			margin: 2% 2% 2% 0;
+			&:nth-of-type(4) {
+				margin-right: 0;
+			}
+		}
+	}
+	aside {
+		width: 45%;
+		float: right;
+		padding-right: 14%;
+		.btn {
+			margin: 0;
+		}
+	}
+	.donation-info {
+		margin: 50px auto;
+		width: 80%;
+		.donate-icon4 {
+			width: 120px;
+			margin: 0 30px 40px 30px;
+			display: inline-block;
+		}	
+		p {
+			@include font(1);
+			width: 70%;
+			margin: 0 0 0 20px;
+			display: inline-block;
+		}
+	}
+}
+
+// ===================================
+// CART
+// ===================================
+
+.cart-container {
+	width: 100%;
+	h4 {
+		margin-top: 50px;
+	}
+	.cart-left {
+		float: left;
+		width: 55%;
+		.cart-item {
+			margin: 10px 0;
+			.item-image {
+				width: 30%;
+				.cart-img {
+				}
+			}
+			.item-desc {
+				width: 30%;
+				float: left;
+			}			
+		}
+	}	
+}
+
+.order-summary {
+	background-color: white;
+	float: right;
+	margin: 140px 30px 40px 0;
+	.title {
+	}
+	.itemized {
+		.width {
+		}
+		.cost {
+		}
+	}
+	.donate-icon-cart {
+	}	
+	h3 {
+	}
+	.horiz-line {
+	}
+	.btn {
+		display: block;
+		margin: 10px auto;
+		}
+}
+
+// ===================================
+// UPLOAD
+// ===================================
+
+.upload {
+	width: 70%;
+	textarea {
+		width: 82%;
+		margin-left: 2%;
+	} 
+	.row {
+		// background-color: red;
+		margin: 30px auto;
+		.upload-box {
+			padding: 10px;
+			width: 25%;
+			margin: 20px 4%;
+		}
+	}
+	.buttons {
+		text-align: center;
+		.btn {
+			width: 25%;
+			margin: 0 2% 10px 2%;
+			// float: right;
+		}
+	}
+}
+
+.upload-info {
+	width: 55%;
+}
+
+.tip, .tiptwo {
+	display: block;
+   	background: $yellow;
+   	position: absolute;
+   	// float: right;
+	padding: 15px;
+   	-moz-border-radius:    10px;
+   	-webkit-border-radius: 10px;
+   	border-radius:         10px;
+}
+.tip:before {
+   	content:"";
+   	position: absolute;
+   	right: 100%;
+   	top: 26px;
+   	width: 0;
+   	height: 0;
+   	border-top: 13px solid transparent;
+   	border-right: 26px solid $yellow;
+   	border-bottom: 13px solid transparent;
+}
+.tiptwo:before {
+   	content:"";
+   	position: absolute;
+   	left: 100%;
+   	top: 26px;
+   	width: 0;
+   	height: 0;
+   	border-top: 13px solid transparent;
+   	border-left: 26px solid $yellow;
+   	border-bottom: 13px solid transparent;
+}
+
+.one {
+	width: 160px;
+   	height: 130px;
+   	top: 220px;
+	right: 16%;
+	// h5 {
+	// 	color: $white;
+	// }
+}
+
+.two {
+	width: 140px;
+   	height: 190px;
+   	top: 480px;
+	left: 10%;
+}
+
+.three {
+	width: 190px;
+   	height: 190px;
+   	top: 480px;
+	right: 6.6%;
+}
+
+.four {
+	width: 190px;
+   	height: 90px;
+   	top: 710px;
+	right: 29%;
+	text-align: left;
+}
+
+}

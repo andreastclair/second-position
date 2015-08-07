@@ -1,0 +1,327 @@
+@media screen and (min-width: 800px) {
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+// h1 {
+// 	@include font(1);
+// }
+// ===================================
+// HEADER
+// ===================================
+
+
+header {
+	height: 95px;
+	padding: 10px 0;
+	.name {
+		padding: 0 0 2px 5%;
+		.logo {
+			visibility: visible;
+			width: 100px;
+			padding: 0 10px 10px 0;
+			float: left;
+		}
+		h1 {
+			margin-top: 20px;
+			text-align: left;
+			@include font(3.5);
+		}
+	}
+	nav {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+}	
+
+// ===================================
+// HOME/BROWSE
+// ===================================
+
+.intro {
+	width: 100%;
+	padding: 50px 0;
+	// border-bottom: 1px solid $grey;
+	margin-bottom: 5px;
+}
+
+.centered {
+	background-color: white;
+	margin: 0 auto 5px auto;
+	text-align: center;
+	padding: 70px 0;
+	width: 100%;
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	h2 {
+		color: $white;
+		margin-top: 230px;
+		@include font(2.2);
+	}
+	.costumes {
+		border-top: none;
+		background: url("../images/costumes.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0;
+		display: inline-block;
+		padding: 0;
+		width: 230px;
+		height: 230px;
+		&:hover {
+			color: $yellow;
+		}
+		a {
+			color: $black;
+			font-weight: normal;
+			text-shadow: 1px 1px 1px transparent;
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}	
+	.shoes, .accessories {
+		display: inline-block;
+		// visibility: visible;
+		position: relative;
+		width: 230px;
+		height: 230px;
+		background-color: $black;
+		text-align: center;
+		a {
+			color: $black;
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
+	.shoes {
+		margin: 0 5%;
+		background: url("../images/shoes.jpg");
+		background-size: cover;
+	}	
+	.accessories {
+		background: url("../images/tiara.jpg");
+		background-size: cover;
+	}	
+}
+
+.partners {
+	background: none;
+	border-top: none;
+	height: 520px;
+	border-bottom: 1px solid $grey;
+	padding: 60px 0 60px 0;
+	margin: 0;
+	p {
+		display: block;
+		// visibility: visible;
+		position: relative;
+		text-align: left;
+	}
+	a {
+		text-shadow: 1px 1px 1px transparent;
+		color: $black;
+		font-weight: normal;
+	}
+	.partner-logo {
+		display: block;
+		// visibility: visible;
+		position: relative;
+		width: 80px;
+		display: inline-block;
+		border-radius: 50px;
+		border: 3px solid $black;
+		margin: 30px 40px 0 40px;
+	}
+}
+
+.donate {
+	border-top: 1px solid $grey;
+	margin-top: 5px;
+	height: 520px;
+	background: none;
+	position: relative;
+	display: block;
+	// visibility: visible;
+	padding: 60px 0;
+	p {
+		display: block;
+		// visibility: visible;
+		position: relative;
+		text-align: left;
+	}
+	a {
+		text-shadow: 1px 1px 1px transparent;
+		color: $black;
+		font-weight: normal;
+	}
+	.cool {
+		display: block;
+		height: 105px;
+	}
+	.donate-icon {
+		display: block;
+		// visibility: visible;
+		position: relative;
+		width: 100px;
+		margin: 30px auto 20px auto;
+		&:hover {
+			width: 105px;
+			height: 105px;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
+		}
+	}
+}
+
+// ===================================
+// COSTUME GALLERY
+// ===================================
+
+.gallery {
+	width: 90%;
+	margin: 70px auto;
+	.item-foot {
+		width: 30%;
+		// margin-right: 2%;
+		margin: 10px;
+	}
+}
+
+// ===================================
+// ITEM PAGE
+// ===================================
+.item-container {
+	width: 90%;
+	margin: 70px auto;
+
+	.main-item {
+		float: left;
+		width: 50%;
+		max-width: 300px;
+		padding-top: 12px;
+		.main-photo {
+			width: 100%;
+		}
+		.side-images {
+			width: 100%;
+			max-width: 300px;
+			.sub-item {
+				width: 22.6%;
+				margin: 2% 2% 2% 0;
+				&:nth-of-type(4) {
+					margin-right: 0;
+				}
+			}	
+		}
+	}	
+	aside {
+		width: 50%;
+		float: right;
+	}
+	.donation-info {
+		margin: 50px auto;
+		width: 90%;
+		.donate-icon4 {
+			width: 80px;
+			display: block;
+			margin: 0 auto 10px auto;
+		}	
+		p {
+			@include font(1);
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+
+// ===================================
+// CART
+// ===================================
+
+.cart-container {
+	width: 70%;
+	h4 {
+	}
+	.cart-item {
+		.item-image {
+			.cart-img {
+			}
+		}	
+		.item-desc {
+			width: 45%;
+		}	
+	}
+
+	.order-summary {
+		width: 90%;
+		.title {
+		}
+		.itemized {
+			.width {
+			}
+			.cost {
+				margin: 5px 0 0 100px;
+			}
+		}
+	}
+}
+
+// ===================================
+// UPLOAD
+// ===================================
+
+.upload {
+	margin: 70px auto 20px auto;
+	textarea {
+		width: 99%;
+	} 
+	.row {
+		width: 100%;
+		margin: 20px auto;
+		.upload-box {
+			outline: 1px solid $grey;
+			padding: 5px;
+			display: inline-block;
+			width: 30%;
+			margin: 20px 1.4%;
+			.nth-of-type:(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+	.btn {
+		width: 45%;
+		margin: 0 2%;
+	}
+}
+
+
+// ===================================
+// FOOTER
+// ===================================
+
+footer {
+	padding: 30px 5%;
+	height: 150px;
+	.social {
+		display: none;
+		position: absolute;
+	}
+	.contact, .follow, .foot-details-left, .foot-details-right {
+		display: block;
+		position: relative;
+		.social2 {
+			width: 165px;
+		}
+	}
+}
+
+
+
+}

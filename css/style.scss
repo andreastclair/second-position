@@ -1,0 +1,621 @@
+@import 'reset';
+@import 'custom';
+// @import 'bourbon/bourbon';
+// @import 'neat/neat';
+
+@mixin font($em){
+    font-size: ($em*16) + px;
+    font-size: ($em) + em;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+ }
+
+body {
+  	font-family: "brandon-grotesque",sans-serif;
+  	// font-family: "futura-pt",sans-serif;
+  	background-color: $white;
+  	color: $black;  
+  }
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.clear-fix {
+	clear: both;
+}
+
+.horiz-line {
+	border-bottom: 1px solid $black;
+	margin: 30px 0;
+}
+
+// ===================================
+// TYPE
+// ===================================
+
+h1 {
+	@include font(3.5);
+	line-height: 1.3;
+} 
+
+h2 {
+	@include font(2.5);
+	line-height: 1.5;
+}
+
+h3 {
+	@include font(1.875);
+	line-height: 1.5;
+	font-weight: bold;
+	color: $white;
+}
+
+h4 {
+	@include font(1);
+	line-height: 2;
+	color: $white;
+}
+
+h5 {
+	@include font(1);
+	line-height: 1.2;
+	color: $black;
+}
+
+p {
+	@include font(1.4);
+	line-height: 1.8;
+}
+
+.bold {
+	@include font(1.4);
+	line-height: 1.8;
+	font-weight: bold;
+}
+
+.italic {
+	@include font(1.4);
+	line-height: 1.8;
+	font-style: italic;
+}
+
+.small {
+	@include font(1);
+	line-height: 1.8;
+}
+
+.recalc {
+	@include font(1);
+	line-height: 0;
+	color: $dkgreen;
+}
+
+span {
+	color: $dkgreen;
+	&:hover {
+		color: $yellow;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+	&:hover {
+		color: $ltgreen;
+	}
+}
+
+.btn {
+  background: #76E2C0;
+  font-family: "brandon-grotesque",sans-serif;
+  // font-family: "futura-pt",sans-serif;
+  background-image: -webkit-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -moz-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -ms-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: -o-linear-gradient(top, #76E2C0, #6AD2B0);
+  background-image: linear-gradient(to bottom, #76E2C0, #6AD2B0);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 0 10px 10px;
+}
+
+.btn:hover {
+  background: #8BA19E;
+  text-decoration: none;
+}
+
+// ===================================
+// HEADER
+// ===================================
+
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	background-color: $ltblack;
+	padding: 10px auto;	
+	height: 115px;
+	.name {
+		.logo {
+			visibility: hidden;
+			width: 0;
+		}
+		h1 {
+			@include font(2.2);
+			text-align: center;
+			color: $white;
+			padding-bottom: 2px;
+		}
+	}
+	nav {
+		text-align: center;
+		li {
+			display: inline;
+			margin: 8px;
+		}
+	}
+}	
+
+// ===================================
+// HOME/BROWSE
+// ===================================
+
+.paragraph {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.intro {
+	padding: 30px 0;
+	width: 90%;
+	margin: 10px auto 30px auto;
+	h2 {
+		text-align: center;
+	}
+}
+
+.costumes, .donate, .partners {
+	background-color: $black;
+	text-align: center;
+	padding: 80px 0;
+	a {
+		color: $ltblack;
+		text-shadow: 1px 1px 1px $dkgreen;
+		font-weight: bold;
+		&:hover {
+			color: $yellow;
+			text-shadow: 1px 1px 1px transparent;
+		}
+	}
+}
+
+.costumes {
+	border-top: 1px solid $yellow;
+	background: url("../images/costumesBW.jpg");
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -30px;
+}
+
+.donate {
+	background: url("../images/donateBW.jpg");
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0;
+	p {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}
+	.donate-icon {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}	
+}
+
+.partners {
+	background: url("../images/partnersBW.jpg");
+	height: 220px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -10px;
+	text-align: center;
+	border-top: 10px solid $yellow;
+	border-bottom: 10px solid $yellow;
+	p {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}
+	.partner-logo {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}
+}
+
+.shoes, .accessories {
+	position: absolute;
+	// visibility: hidden;
+	display: none;
+}
+
+// ===================================
+// DASHBOARD
+// ===================================
+	
+.dashboard {
+	width: 90%;
+	margin: 30px auto;
+	h4 {
+		color: $black;
+	}
+	.icon-container {
+		.dashcon {
+			margin: 20px auto;
+			width: 150px;
+			.icon {
+				display: block;
+				width: 150px;
+				&:hover {
+					filter: invert(80%);
+					-webkit-filter: invert(80%);
+					-moz-filter: invert(80%);
+					-o-filter: invert(80%);
+					-ms-filter: invert(80%);
+				}	
+			}
+			h5 {
+				text-align: center;
+				margin: 8px 0;
+				a {
+					color: $black;
+					&:hover {
+						color: $dkgreen;
+					}
+				}
+			}
+		}
+	}
+
+}	
+
+// ===================================
+// COSTUME GALLERY
+// ===================================
+
+.gallery {
+	width: 100%;
+	overflow: hidden;
+	margin: 30px auto;
+	// background-color: red;
+	.item-foot {
+		width: 100%;
+		max-width: 230px;
+		margin: 40px auto;
+		// margin-right: 2%;
+		// margin: 10px auto;
+		outline: 3px solid $black;
+		.item {
+			width: 100%;
+			max-width: 230px;
+			border-bottom: 3px solid $black;
+		}
+		.opts {
+			width: 100%;
+			max-width: 230px;
+			padding-left: 66%;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			margin: 0 auto;
+			.favorite {
+				width: 25px;
+			}
+			.plus {
+				width: 24px;
+				margin-left: 8px;
+			}
+		}
+	}
+}
+
+// ===================================
+// ITEM PAGE
+// ===================================
+.item-container {
+	width: 90%;
+	display: block;
+	margin: 50px auto;
+	.main-item {
+		width: 100%;
+		margin: 0 auto;
+		.main-photo {
+			width: 100%;
+			max-width: 400px;
+			display: block;
+			margin: 0 auto;
+		}
+		.side-images {
+			margin: 0 auto;
+			max-width: 400px;
+			.sub-item {
+				width: 20%;
+				margin: 5% 5% 5% 0;
+				&:nth-of-type(4) {
+					margin-right: 0;
+				}
+			}
+		}
+	}		
+	a {
+		color: $black;
+		display: inline-block;
+		margin-bottom: 10px;
+		&:hover {
+			color: $dkgreen;
+		}
+	}
+	.btn {
+		margin: 0;
+	}
+
+	.donation-info {
+		margin: 50px auto;
+		width: 90%;
+		.donate-icon4 {
+			width: 100px;
+			display: block;
+			margin: 0 auto 20px auto;
+		}	
+		p {
+			@include font(1);
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+
+
+// ===================================
+// CART
+// ===================================
+
+.cart-container {
+	width: 80%;
+	margin: 0 auto;
+	h4 {
+		color: $black;
+		margin-top: 30px;
+	}
+	.cart-item {
+		margin: 50px 0;
+		width: 100%;
+		.item-image {
+			width: 50%;
+			max-width: 300px;
+			float: left;
+			.cart-img {
+				width: 90%;
+				margin-top: 10px;
+			}
+		}	
+		.item-desc {
+			width: 40%;
+			float: right;
+			a {
+				color: $dkgreen;
+			}
+		}
+	}	
+}
+
+.order-summary {
+	background-color: white;
+	width: 95%;
+	max-width: 300px;
+	outline: 1px solid $grey;
+	padding: 5px;
+	margin: 0 auto 40px auto;
+	.title {
+		text-align: center;
+		margin: 10px 0;
+	}
+	.itemized {
+		.width {
+			display: inline-block;
+			width: 100px;
+			margin: 5px 0 5px 10px;
+			a {
+				color: $dkgreen;
+			}
+		}
+		.cost {
+			margin: 5px 0 0 50px;
+			display: inline;
+		}
+	}
+	.donate-icon-cart {
+		width: 50px;
+		display: block;
+		margin: 25px auto 5px auto;
+	}	
+	h3 {
+		color: $black;
+		text-align: center;
+	}
+	.horiz-line {
+		margin: 5px;
+	}
+	.btn {
+		display: block;
+		margin: 10px auto;
+	}
+}
+
+// ===================================
+// UPLOAD
+// ===================================
+
+.upload {
+	padding: 20px;
+	width: 90%;
+	margin: 30px auto 20px auto;
+	background-color: white;
+	border-top: 1px solid $grey;
+	border-right: 1px solid $grey;
+	border-left: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	border-radius: 15px;
+	h4 {
+		color: $black;
+		text-align: center;
+		font-weight: bold;
+		@include font(1.2);
+		margin-bottom: 20px
+	}
+	textarea {
+		margin-top: 8px;
+		width: 95%;
+		height: 60px;
+	}
+	.row {	
+		.upload-box {
+			margin-top: 30px;
+			h5 {
+				margin-bottom: 8px;
+				text-transform: uppercase;
+			}
+			 
+		}	
+	}
+	.btn {
+		width: 100%;
+		margin: 20px auto 0 auto;
+	}
+}
+
+.upload-info {
+	width: 80%;
+	margin: 0 auto 50px auto;
+	.upload-info-icon {
+		text-align: center;
+		.upload-icon {
+			display: inline-block;
+			width: 80px;
+			margin: 10px 10px 20px 0;
+		}
+	}
+}
+
+.tip {
+	display: none;
+	position: absolute;
+}
+.tiptwo {
+	display: none;
+	position: absolute;
+}
+
+// ===================================
+// SUCCESS
+// ===================================
+
+.success-container {
+	margin: 70px auto;
+	.success-box {
+		width: 90%;
+		max-width: 500px;
+		height: 470px;
+		// padding: 20px;
+		border-radius: 15px;
+		border-top: 1px solid $grey;
+		border-bottom: 1px solid $grey;
+		border-right: 1px solid $grey;
+		border-left: 1px solid $grey;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			margin: 0 20px;
+		}
+		h3 {
+			margin: 20px 20px 20px 20px;
+			color: $dkgreen;
+		}
+		a {
+			height: 65px;
+			width: 65px;
+			color: $dkgreen;
+			&:hover {
+				color: $yellow;
+			}
+		}
+		h4 {
+			color: $black;
+			margin-top: 30px;
+			font-weight: bold;
+		}
+		.social-div{
+			background-color: $yellow;
+			.social-success {
+				width: 60px;
+				margin: 20px 10px;
+			}
+		}
+		.btn {
+			margin: 30px 30px 0 30px;
+		}	
+	}
+}
+
+// ===================================
+// FOOTER
+// ===================================
+
+footer {
+	// box-sizing: border-box;
+	width: 100%;
+	border-top: 1px solid $yellow;
+	background-color: $ltblack;
+	padding: 30px 0;
+	.social {
+		display: block;
+		margin: 0 auto;
+		width: 200px;
+	}
+	.contact, .follow, .foot-details-left, .foot-details-right {
+		display: none;
+		position: absolute;
+	}
+	.contact, .follow {
+		float: left;
+	}
+	.foot-details-left, .foot-details-right {
+		float: right;
+	}
+	.foot {
+		margin: 0 2%;
+	}
+
+}
+
+@import '600-media';
+@import 'mid-media';
+@import 'max-media';
