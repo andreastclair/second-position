@@ -181,7 +181,7 @@
 	width: 55%;
 }
 
-.tip, .tiptwo {
+.tip, .tiptwo, .tipthree {
 	display: block;
    	background: $yellow;
    	position: absolute;
@@ -245,5 +245,16 @@
 	right: 29%;
 	text-align: left;
 }
+
+.five {
+	width: 130px;
+   	height: 120px;
+   	top: 600px;
+	left: 22%;
+	text-align: left;
+}
+
+
+
 
 }
