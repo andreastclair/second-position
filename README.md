@@ -1,5 +1,5 @@
 # second-position
-A site that raises money through costume sales to fund dance programs for children.  
+A site that raises money through costume sales to fund dance programs for children, because every child deserves to have their moment in the spotlight.  
 
 ##History & Intro
 A charity-based site for buying and selling used dance costumes. A minimum of 10% of proceeds are donated to a charity that funds dance scholarships and/or classes for kids who can't afford them. 10% is collected by the site for running costs, and the remaining 80% can be paid directly to the seller or donated in full.  
