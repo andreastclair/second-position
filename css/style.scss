@@ -144,7 +144,7 @@ a {
 }
 
 .btn:hover {
-  background: #8BA19E;
+  background: $yellow;
   text-decoration: none;
 }
 
@@ -154,6 +154,7 @@ a {
 
 
 header {
+	z-index: 100;
 	width: 100%;
 	margin: 0 auto;
 	background-color: $ltblack;
@@ -374,20 +375,6 @@ header {
 				}
 			}
 		}
-		.hide-img {
-		  display: none;
-		}
-		.modal-backdrop {
-			width: 100%;
-			display: none;
-		}
-		.modal {
-			background: $white;
-			img {
-				// width: 100%;
-				margin: 0 auto;
-			}
-		}
 	}		
 	a {
 		color: $black;
@@ -417,9 +404,20 @@ header {
 	}
 }
 
-
-
-
+.hide-img {
+	display: none;
+}
+.modal-backdrop {
+	width: 100%;
+	display: none;
+}
+.modal {
+	background: $white;
+	img {
+		// width: 100%;
+		margin: 0 auto;
+	}
+}
 
 
 

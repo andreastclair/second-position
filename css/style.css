@@ -2345,10 +2345,11 @@ a {
   margin: 0 10px 10px; }
 
 .btn:hover {
-  background: #8BA19E;
+  background: #EFCB35;
   text-decoration: none; }
 
 header {
+  z-index: 100;
   width: 100%;
   margin: 0 auto;
   background-color: #454E56;
@@ -2505,15 +2506,6 @@ header {
         margin: 5% 5% 5% 0; }
         .item-container .main-item .side-images .sub-item:nth-of-type(4) {
           margin-right: 0; }
-    .item-container .main-item .hide-img {
-      display: none; }
-    .item-container .main-item .modal-backdrop {
-      width: 100%;
-      display: none; }
-    .item-container .main-item .modal {
-      background: #EFEDED; }
-      .item-container .main-item .modal img {
-        margin: 0 auto; }
   .item-container a {
     color: #3A4149;
     display: inline-block;
@@ -2534,6 +2526,18 @@ header {
       font-size: 1em;
       width: 100%;
       margin: 0 auto; }
+
+.hide-img {
+  display: none; }
+
+.modal-backdrop {
+  width: 100%;
+  display: none; }
+
+.modal {
+  background: #EFEDED; }
+  .modal img {
+    margin: 0 auto; }
 
 .cart-container {
   width: 80%;
@@ -2757,7 +2761,7 @@ footer {
     height: 95px;
     padding: 10px 0; }
     header .name {
-      width: 59%;
+      width: 60%;
       padding: 0 0 2px 5%; }
       header .name .logo {
         visibility: visible;
@@ -2771,19 +2775,22 @@ footer {
         font-size: 3.5em; }
     header nav {
       position: absolute;
-      top: 10px;
+      top: 15px;
       right: 20px; }
 
   .intro {
     width: 100%;
     padding: 50px 0;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 800px;
+    color: #EFEDED; }
 
   .centered {
     background-color: white;
     margin: 0 auto 5px auto;
     text-align: center;
-    padding: 70px 0;
+    padding: 30px 0 50px 0;
     width: 100%;
     border-top: 1px solid #8BA19E;
     border-bottom: 1px solid #8BA19E; }
@@ -2806,10 +2813,12 @@ footer {
         color: #EFCB35; }
       .centered .costumes a {
         color: #3A4149;
+        text-decoration: underline;
         font-weight: normal;
         text-shadow: 1px 1px 1px transparent; }
         .centered .costumes a:hover {
-          color: #EFCB35; }
+          color: #EFCB35;
+          text-decoration: none; }
     .centered .shoes, .centered .accessories {
       display: inline-block;
       position: relative;
@@ -2818,9 +2827,11 @@ footer {
       background-color: #3A4149;
       text-align: center; }
       .centered .shoes a, .centered .accessories a {
+        text-decoration: underline;
         color: #3A4149; }
         .centered .shoes a:hover, .centered .accessories a:hover {
-          color: #EFCB35; }
+          color: #EFCB35;
+          text-decoration: none; }
     .centered .shoes {
       margin: 0 5%;
       background: url("../images/shoes.jpg");
@@ -2930,7 +2941,8 @@ footer {
     .cart-container .cart-item .item-desc {
       width: 45%; }
     .cart-container .order-summary {
-      width: 90%; }
+      width: 90%;
+      margin-top: 112px; }
       .cart-container .order-summary .itemized .cost {
         margin: 5px 0 0 100px; }
 
@@ -2969,11 +2981,26 @@ footer {
     width: 55%;
     margin: 0 auto; }
 
-  .centered h2 {
-    margin-top: 290px; }
-  .centered .costumes, .centered .shoes, .centered .accessories {
-    width: 300px;
-    height: 300px; }
+  iframe {
+    width: 100%;
+    height: 900px;
+    z-index: -100;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1); }
+
+  .centered {
+    margin-top: 300px; }
+    .centered h2 {
+      margin-top: 290px; }
+    .centered .costumes, .centered .shoes, .centered .accessories {
+      width: 300px;
+      height: 300px; }
 
   .partners .partner-logo {
     width: 100px;
@@ -2993,12 +3020,12 @@ footer {
       margin: 20px; }
 
   .item-container {
-    width: 85%;
+    width: 80%;
     margin: 70px auto; }
     .item-container .main-item {
       float: left;
       width: 55%;
-      margin-left: 14%; }
+      margin-left: 5%; }
       .item-container .main-item .main-photo {
         width: 100%; }
     .item-container .side-images .sub-item {
@@ -3007,9 +3034,9 @@ footer {
       .item-container .side-images .sub-item:nth-of-type(4) {
         margin-right: 0; }
     .item-container aside {
-      width: 50%;
+      width: 40%;
       float: right;
-      padding-right: 13%; }
+      margin-right: 5%; }
       .item-container aside .btn {
         margin: 0; }
     .item-container .donation-info {

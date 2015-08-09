@@ -17,7 +17,7 @@ header {
 	height: 95px;
 	padding: 10px 0;
 	.name {
-		width: 59%;
+		width: 60%;
 		padding: 0 0 2px 5%;
 		.logo {
 			visibility: visible;
@@ -33,7 +33,7 @@ header {
 	}
 	nav {
 		position: absolute;
-		top: 10px;
+		top: 15px;
 		right: 20px;
 	}
 }	
@@ -47,13 +47,16 @@ header {
 	padding: 50px 0;
 	// border-bottom: 1px solid $grey;
 	margin-bottom: 5px;
+	background-color: rgba(0,0,0,0.3);
+	width: 800px;
+	color: $white;
 }
 
 .centered {
 	background-color: white;
 	margin: 0 auto 5px auto;
 	text-align: center;
-	padding: 70px 0;
+	padding: 30px 0 50px 0;
 	width: 100%;
 	border-top: 1px solid $grey;
 	border-bottom: 1px solid $grey;
@@ -77,10 +80,12 @@ header {
 		}
 		a {
 			color: $black;
+			text-decoration: underline;
 			font-weight: normal;
 			text-shadow: 1px 1px 1px transparent;
 			&:hover {
 				color: $yellow;
+				text-decoration: none;
 			}
 		}
 	}	
@@ -93,9 +98,11 @@ header {
 		background-color: $black;
 		text-align: center;
 		a {
+			text-decoration: underline;
 			color: $black;
 			&:hover {
 				color: $yellow;
+				text-decoration: none;
 			}
 		}
 	}
@@ -261,6 +268,7 @@ header {
 
 	.order-summary {
 		width: 90%;
+		margin-top: 112px;
 		.title {
 		}
 		.itemized {
