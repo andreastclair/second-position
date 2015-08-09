@@ -29,6 +29,7 @@
 			<!-- <nav class="nav-collapse"> -->
 			<nav>
 			  <ul>
+			  	<li><a href="costumes.html">Browse</a></li>
 			    <li><a href="account.html">Account</a></li>
 			    <li><a href="about.html">About</a></li>
 			    <li><a href="cart.html">Cart</a></li>
@@ -51,7 +52,16 @@
 						<img class="sub-item" src="images/costumes/green-white-tutu4SQ.jpg">
 					</div>	
 
-					<span><a href="#">contact the seller</a></span> | <span><a href="http://www.capezio.com/media/wysiwyg/size_guides/bodywear-women.jpg">size chart</a></span>
+					<!-- <span><a href="#">contact the seller</a></span> | <span><a href="http://www.capezio.com/media/wysiwyg/size_guides/bodywear-women.jpg">size chart</a></span> -->
+
+					<span><a href="#">contact the seller</a></span> | <span class="show-more"><a href="#nothing">size chart</a></span>
+
+					<div class="modal-backdrop">
+						<div class="modal">
+							<img src="images/size-chart.jpg">
+							<a href="#nothing" class="hide-modal">close</a>
+						</div>
+					</div>		
 				</div>
 
 
@@ -65,7 +75,7 @@
 					<p class="small">$10.00 Donation Value</p>
 					<br>
 
-					<a href="#">
+					<a href="#nothing">
 						<button class="btn">
 	  						<p>ADD TO CART</p>
 						</button>

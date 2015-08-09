@@ -8,6 +8,8 @@
 		<script src="//code.jquery.com/jquery-latest.min.js"></script>
 		<script src="//use.typekit.net/vdg6dwu.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    	<script type="text/javascript" src="scripts/main.js"></script>
 		<link rel="icon" type="image/png" href="images/logo3.png">
 	</head>
 
@@ -28,6 +30,7 @@
 			<!-- <nav class="nav-collapse"> -->
 			<nav>
 			  <ul>
+			  	<li><a href="costumes.html">Browse</a></li>
 			    <li><a href="account.html">Account</a></li>
 			    <li><a href="about.html">About</a></li>
 			    <li><a href="cart.html">Cart</a></li>
@@ -49,7 +52,14 @@
 						<img class="sub-item" src="images/costumes/red-skirt5SQ.jpg">
 					</div>	
 
-					<span><a href="#">contact the seller</a></span> | <span><a href="http://www.capezio.com/media/wysiwyg/size_guides/bodywear-women.jpg">size chart</a></span>
+					<span><a href="#">contact the seller</a></span> | <span class="show-more"><a href="#nothing">size chart</a></span>
+
+					<div class="modal-backdrop">
+						<div class="modal">
+							<img src="images/size-chart.jpg">
+							<a href="#nothing" class="hide-modal">close</a>
+						</div>
+					</div>	
 				</div>
 	
 
@@ -63,7 +73,7 @@
 					<p class="small">$4.00 Donation Value</p>
 					<br>
 
-					<a href="#">
+					<a href="#nothing">
 						<button class="btn">
 	  						<p>ADD TO CART</p>
 						</button>
