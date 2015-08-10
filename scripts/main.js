@@ -30,12 +30,12 @@ function hideModal() {
 	backdrop.hide();
 }
 
-$('img').click(function(){
+$('.modal-backdrop img').click(function(){
   $(this).addClass('hide-img');
 })
 
 hide.click(function(){
-  $('img').removeClass('hide-img');
+  $('.modal-backdrop img').removeClass('hide-img');
 })
 
 function showMore() {
@@ -49,4 +49,57 @@ function showText() {
 function hideText() {
   show.html('hide more');
 }
+
+
+
+$('iframe').hide();
+
+
+$('.play').click(function(){
+	$('.play-box').hide();
+	$(this).hide();
+	$('.intro').hide();
+	$('iframe').show();
+	// $("iframe#ytplayer").attr("src", $("iframe#ytplayer").attr("src").replace("autoplay=0", "autoplay=1"));
+	// $("iframe")[0].src += "&autoplay=1";
+	// $(this).unbind("click")
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

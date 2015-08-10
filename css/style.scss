@@ -185,6 +185,8 @@ header {
 // HOME/BROWSE
 // ===================================
 
+
+
 .paragraph {
 	width: 90%;
 	margin: 0 auto;
@@ -192,8 +194,9 @@ header {
 
 .intro {
 	padding: 30px 0;
-	width: 90%;
+	width: 100%;
 	margin: 10px auto 30px auto;
+	
 	h2 {
 		text-align: center;
 	}
@@ -238,6 +241,9 @@ header {
 		display: none;
 		// visibility: hidden;
 		position: absolute;
+	}
+	h5 {
+		display: none;
 	}	
 }
 
