@@ -2688,7 +2688,7 @@ header {
   position: absolute; }
 
 .success-container {
-  margin: 100px auto 200px auto; }
+  margin: 80px auto 200px auto; }
   .success-container .success-box {
     width: 90%;
     max-width: 500px;
@@ -2718,8 +2718,8 @@ header {
     .success-container .success-box .social-div {
       background-color: #EFCB35; }
       .success-container .success-box .social-div .social-success {
-        width: 60px;
-        margin: 20px 10px; }
+        width: 40px;
+        margin: 20px auto; }
     .success-container .success-box .btn {
       margin: 30px 30px 0 30px; }
 
@@ -2898,7 +2898,7 @@ footer {
     color: #3A4149;
     z-index: -100; }
     .intro .hero {
-      background: url("../images/hero3BW.jpg");
+      background: url("../images/hero5.gif");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 0;
