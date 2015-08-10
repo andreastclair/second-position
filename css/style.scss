@@ -329,11 +329,11 @@ header {
 		margin: 40px auto;
 		// margin-right: 2%;
 		// margin: 10px auto;
-		outline: 3px solid $black;
+		outline: 2px solid $ltblack;
 		.item {
 			width: 100%;
 			max-width: 230px;
-			border-bottom: 3px solid $black;
+			border-bottom: 2px solid $ltblack;
 		}
 		.opts {
 			width: 100%;
@@ -419,9 +419,9 @@ header {
 }
 .modal {
 	background: $white;
+	position: absolute;
 	img {
-		// width: 100%;
-		margin: 0 auto;
+		max-width: 100%;
 	}
 }
 

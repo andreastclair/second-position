@@ -2469,11 +2469,11 @@ header {
     width: 100%;
     max-width: 230px;
     margin: 40px auto;
-    outline: 3px solid #3A4149; }
+    outline: 2px solid #454E56; }
     .gallery .item-foot .item {
       width: 100%;
       max-width: 230px;
-      border-bottom: 3px solid #3A4149; }
+      border-bottom: 2px solid #454E56; }
     .gallery .item-foot .opts {
       width: 100%;
       max-width: 230px;
@@ -2537,9 +2537,10 @@ header {
   display: none; }
 
 .modal {
-  background: #EFEDED; }
+  background: #EFEDED;
+  position: absolute; }
   .modal img {
-    margin: 0 auto; }
+    max-width: 100%; }
 
 .cart-container {
   width: 80%;

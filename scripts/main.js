@@ -31,7 +31,8 @@ function hideModal() {
 }
 
 $('.modal-backdrop img').click(function(){
-  $(this).addClass('hide-img');
+  // $(this).addClass('hide-img');
+  backdrop.hide();
 })
 
 hide.click(function(){
@@ -52,19 +53,7 @@ function hideText() {
 
 
 
-$('iframe').hide();
 
-
-$('.play').click(function(){
-	$('.play-box').hide();
-	$(this).hide();
-	$('.intro').hide();
-	$('iframe').show();
-	// $("iframe#ytplayer").attr("src", $("iframe#ytplayer").attr("src").replace("autoplay=0", "autoplay=1"));
-	// $("iframe")[0].src += "&autoplay=1";
-	// $(this).unbind("click")
-
-})
 
 
 
