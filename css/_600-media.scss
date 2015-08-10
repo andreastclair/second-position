@@ -5,33 +5,109 @@
 	margin: 0 auto;
 }
 
-// h1 {
-// 	@include font(1);
-// }	
+// ===================================
+// HOME/BROWSE
+// ===================================
+
+.paragraph {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.intro {
+	padding: 30px 0;
+	width: 100%;
+	margin: 10px auto 30px auto;
+	
+	h2 {
+		text-align: center;
+	}
+}
+
+.costumes, .donate, .partners {
+	background-color: $black;
+	text-align: center;
+	padding: 110px 0;
+	a {
+		color: $ltblack;
+		text-shadow: 1px 1px 1px $dkgreen;
+		font-weight: bold;
+		&:hover {
+			color: $yellow;
+			text-shadow: 1px 1px 1px transparent;
+		}
+	}
+}
+
+.costumes {
+	border-top: 1px solid $yellow;
+	background: url("../images/costumesBW.jpg");
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -50px;
+}
+
+.donate {
+	background: url("../images/donateBW.jpg");
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0;
+	p {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}
+	.donate-icon {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}
+	h5 {
+		display: none;
+	}	
+}
+
+.partners {
+	background: url("../images/partnersBW.jpg");
+	height: 290px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -70px;
+	text-align: center;
+	border-top: 10px solid $yellow;
+	border-bottom: 10px solid $yellow;
+	p {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}
+	.partner-logo {
+		display: none;
+		// visibility: hidden;
+		position: absolute;
+	}
+}
+
+.shoes, .accessories {
+	position: absolute;
+	// visibility: hidden;
+	display: none;
+}
+
 // ===================================
 // DASHBOARD
 // ===================================
 	
 .dashboard {
-	margin: 70px auto;
+	width: 80%;
 	.icon-container {
-		width: 700px;
+		width: 380px;
 		margin: 0 auto;
 		.dashcon {
-			margin: 20px auto;
 			margin: 3% 4.7%;
 			display: inline-block;
-			.icon {
-				display: block;
-				width: 150px;
-				&:hover {
-					filter: invert(80%);
-					-webkit-filter: invert(80%);
-					-moz-filter: invert(80%);
-					-o-filter: invert(80%);
-					-ms-filter: invert(80%);
-				}	
-			}
 		}
 	}
 }	
@@ -41,8 +117,10 @@
 // ===================================
 
 .gallery {
-	width: 90%;
-	.item-foot {
+	width: 548px;
+	// background-color: red;
+	// margin-left: 7%;
+	.col3 {
 		float: left;
 		margin: 20px;
 	}
@@ -93,6 +171,39 @@
 		max-width: 500px;
 		height: 440px;
 	}	
+}
+
+// ===================================
+// CART
+// ===================================
+
+.cart-container {
+	width: 70%;
+	h4 {
+	}
+	.cart-item {
+		.item-image {
+			.cart-img {
+			}
+		}	
+		.item-desc {
+			width: 45%;
+		}	
+	}
+
+	.order-summary {
+		width: 90%;
+		margin-top: 112px;
+		.title {
+		}
+		.itemized {
+			.width {
+			}
+			.cost {
+				margin: 5px 0 0 100px;
+			}
+		}
+	}
 }
 
 }

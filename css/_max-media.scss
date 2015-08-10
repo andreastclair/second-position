@@ -14,14 +14,10 @@
 	// border-bottom: 1px solid $grey;
 	margin: -20px auto;
 	.hero {
-		height: 600px;
-		// background-position: -1px;
+		height: 750px;
+		background-position: 0 -120px;
 		.paragraph {
 			margin-top: 160px;
-			background-color: $dkgreen;
-			opacity: 0.5;
-			color: $black;
-			text-align: center;
 		}
 	}
 }
@@ -64,13 +60,12 @@
 // ===================================
 
 .gallery {
-	padding-left: 60px;
-	.item-foot {
-		width: 22.7%;
+	width: 1012px;
+	// background-color: red;
+	.col3 {
 		float: left;
-		// margin-right: 2%;
-		margin: 20px;
-	}
+		margin: 10px;
+	}	
 }
 
 // ===================================
@@ -106,19 +101,8 @@
 		}
 	}
 	.donation-info {
-		margin: 50px auto;
-		width: 80%;
-		.donate-icon4 {
-			width: 120px;
-			margin: 0 30px 40px 30px;
-			display: inline-block;
-		}	
-		p {
-			@include font(1);
-			width: 70%;
-			margin: 0 0 0 20px;
-			display: inline-block;
-		}
+		margin: 30px auto;
+		width: 70%;
 	}
 }
 

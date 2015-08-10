@@ -2228,6 +2228,50 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9 {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 5px; }
+
+.col1 {
+  width: 6.725%;
+  margin-right: 1.754%; }
+
+.col2 {
+  width: 15.204%;
+  margin-right: 1.754%; }
+
+.col3 {
+  width: 23.683%;
+  margin-right: 1.754%; }
+
+.col4 {
+  width: 32.162%;
+  margin-right: 1.754%; }
+
+.col5 {
+  width: 40.641%;
+  margin-right: 1.754%; }
+
+.col6 {
+  width: 49.12%;
+  margin-right: 1.754%; }
+
+.col7 {
+  width: 57.599%;
+  margin-right: 1.754%; }
+
+.col8 {
+  width: 66.078%;
+  margin-right: 1.754%; }
+
+.col9 {
+  width: 74.557%;
+  margin-right: 1.754%; }
+
+div:nth-of-type {
+  margin-right: 0; }
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2351,9 +2395,8 @@ a {
 header {
   z-index: 100;
   width: 100%;
-  margin: 0 auto;
   background-color: #454E56;
-  padding: 10px auto;
+  padding: 10px 0;
   height: 115px; }
   header .name .logo {
     visibility: hidden;
@@ -2441,49 +2484,49 @@ header {
   margin: 30px auto; }
   .dashboard h4 {
     color: #3A4149; }
-  .dashboard .icon-container .dashcon {
-    margin: 20px auto;
-    width: 150px; }
-    .dashboard .icon-container .dashcon .icon {
-      display: block;
+  .dashboard .icon-container {
+    width: 90%;
+    margin: 0 auto; }
+    .dashboard .icon-container .dashcon {
+      margin: 20px auto;
       width: 150px; }
-      .dashboard .icon-container .dashcon .icon:hover {
-        filter: invert(80%);
-        -webkit-filter: invert(80%);
-        -moz-filter: invert(80%);
-        -o-filter: invert(80%);
-        -ms-filter: invert(80%); }
-    .dashboard .icon-container .dashcon h5 {
-      text-align: center;
-      margin: 8px 0; }
-      .dashboard .icon-container .dashcon h5 a {
-        color: #3A4149; }
-        .dashboard .icon-container .dashcon h5 a:hover {
-          color: #6AD2B0; }
+      .dashboard .icon-container .dashcon .icon {
+        display: block;
+        width: 150px; }
+        .dashboard .icon-container .dashcon .icon:hover {
+          filter: invert(80%);
+          -webkit-filter: invert(80%);
+          -moz-filter: invert(80%);
+          -o-filter: invert(80%);
+          -ms-filter: invert(80%); }
+      .dashboard .icon-container .dashcon h5 {
+        text-align: center;
+        margin: 8px 0; }
+        .dashboard .icon-container .dashcon h5 a {
+          color: #3A4149; }
+          .dashboard .icon-container .dashcon h5 a:hover {
+            color: #6AD2B0; }
 
 .gallery {
   width: 100%;
   overflow: hidden;
   margin: 30px auto; }
-  .gallery .item-foot {
+  .gallery .col3 {
     width: 100%;
     max-width: 230px;
     margin: 40px auto;
     outline: 2px solid #454E56; }
-    .gallery .item-foot .item {
+    .gallery .col3 .item {
       width: 100%;
-      max-width: 230px;
-      border-bottom: 2px solid #454E56; }
-    .gallery .item-foot .opts {
+      outline: 1px solid #454E56; }
+    .gallery .col3 .opts {
       width: 100%;
       max-width: 230px;
       padding-left: 66%;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      margin: 0 auto; }
-      .gallery .item-foot .opts .favorite {
+      padding-top: 3px; }
+      .gallery .col3 .opts .favorite {
         width: 25px; }
-      .gallery .item-foot .opts .plus {
+      .gallery .col3 .opts .plus {
         width: 24px;
         margin-left: 8px; }
 
@@ -2645,7 +2688,7 @@ header {
   position: absolute; }
 
 .success-container {
-  margin: 70px auto; }
+  margin: 100px auto 200px auto; }
   .success-container .success-box {
     width: 90%;
     max-width: 500px;
@@ -2704,28 +2747,84 @@ footer {
     width: 100%;
     margin: 0 auto; }
 
+  .paragraph {
+    width: 90%;
+    margin: 0 auto; }
+
+  .intro {
+    padding: 30px 0;
+    width: 100%;
+    margin: 10px auto 30px auto; }
+    .intro h2 {
+      text-align: center; }
+
+  .costumes, .donate, .partners {
+    background-color: #3A4149;
+    text-align: center;
+    padding: 110px 0; }
+    .costumes a, .donate a, .partners a {
+      color: #454E56;
+      text-shadow: 1px 1px 1px #6AD2B0;
+      font-weight: bold; }
+      .costumes a:hover, .donate a:hover, .partners a:hover {
+        color: #EFCB35;
+        text-shadow: 1px 1px 1px transparent; }
+
+  .costumes {
+    border-top: 1px solid #EFCB35;
+    background: url("../images/costumesBW.jpg");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -50px; }
+
+  .donate {
+    background: url("../images/donateBW.jpg");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0; }
+    .donate p {
+      display: none;
+      position: absolute; }
+    .donate .donate-icon {
+      display: none;
+      position: absolute; }
+    .donate h5 {
+      display: none; }
+
+  .partners {
+    background: url("../images/partnersBW.jpg");
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -70px;
+    text-align: center;
+    border-top: 10px solid #EFCB35;
+    border-bottom: 10px solid #EFCB35; }
+    .partners p {
+      display: none;
+      position: absolute; }
+    .partners .partner-logo {
+      display: none;
+      position: absolute; }
+
+  .shoes, .accessories {
+    position: absolute;
+    display: none; }
+
   .dashboard {
-    margin: 70px auto; }
+    width: 80%; }
     .dashboard .icon-container {
-      width: 700px;
+      width: 380px;
       margin: 0 auto; }
       .dashboard .icon-container .dashcon {
-        margin: 20px auto;
         margin: 3% 4.7%;
         display: inline-block; }
-        .dashboard .icon-container .dashcon .icon {
-          display: block;
-          width: 150px; }
-          .dashboard .icon-container .dashcon .icon:hover {
-            filter: invert(80%);
-            -webkit-filter: invert(80%);
-            -moz-filter: invert(80%);
-            -o-filter: invert(80%);
-            -ms-filter: invert(80%); }
 
   .gallery {
-    width: 90%; }
-    .gallery .item-foot {
+    width: 548px; }
+    .gallery .col3 {
       float: left;
       margin: 20px; }
 
@@ -2754,7 +2853,17 @@ footer {
   .success-container .success-box {
     width: 90%;
     max-width: 500px;
-    height: 440px; } }
+    height: 440px; }
+
+  .cart-container {
+    width: 70%; }
+    .cart-container .cart-item .item-desc {
+      width: 45%; }
+    .cart-container .order-summary {
+      width: 90%;
+      margin-top: 112px; }
+      .cart-container .order-summary .itemized .cost {
+        margin: 5px 0 0 100px; } }
 @media screen and (min-width: 800px) {
   .container {
     width: 90%;
@@ -2765,7 +2874,7 @@ footer {
     padding: 10px 0;
     z-index: 100; }
     header .name {
-      width: 60%;
+      width: 70%;
       padding: 0 0 2px 5%; }
       header .name .logo {
         visibility: visible;
@@ -2789,17 +2898,17 @@ footer {
     color: #3A4149;
     z-index: -100; }
     .intro .hero {
-      background: url("../images/hero.jpg");
+      background: url("../images/hero3BW.jpg");
       background-size: cover;
-      background-position: -10px;
+      background-repeat: no-repeat;
+      background-position: 0;
       width: 100%;
       height: 500px;
       padding: 20px; }
       .intro .hero .paragraph {
-        margin: 60px 0 0 0;
+        margin: 60px 0 0 40px;
         max-width: 300px;
-        background-color: #6AD2B0;
-        opacity: 0.5;
+        background-color: rgba(106, 210, 176, 0.5);
         padding: 20px;
         color: #3A4149;
         text-align: center; }
@@ -2915,11 +3024,21 @@ footer {
       .donate .donate-icon h5 {
         display: block; }
 
+  .dashboard {
+    margin: 50px auto;
+    width: 80%; }
+    .dashboard .icon-container {
+      width: 620px;
+      margin: 0 auto; }
+      .dashboard .icon-container .dashcon {
+        margin: 3% 4%;
+        display: inline-block; }
+
   .gallery {
-    width: 90%;
-    margin: 70px auto; }
-    .gallery .item-foot {
-      width: 30%;
+    margin-top: 50px;
+    width: 762px; }
+    .gallery .col3 {
+      float: left;
       margin: 10px; }
 
   .item-container {
@@ -2944,12 +3063,12 @@ footer {
       width: 50%;
       float: right; }
     .item-container .donation-info {
-      margin: 50px auto;
+      margin: 30px auto;
       width: 90%; }
       .item-container .donation-info .donate-icon4 {
         width: 80px;
         display: block;
-        margin: 0 auto 10px auto; }
+        margin: 0 auto 20px auto; }
       .item-container .donation-info p {
         font-size: 16px;
         font-size: 1em;
@@ -3004,13 +3123,10 @@ footer {
   .intro {
     margin: -20px auto; }
     .intro .hero {
-      height: 600px; }
+      height: 750px;
+      background-position: 0 -120px; }
       .intro .hero .paragraph {
-        margin-top: 160px;
-        background-color: #6AD2B0;
-        opacity: 0.5;
-        color: #3A4149;
-        text-align: center; }
+        margin-top: 160px; }
 
   .centered h2 {
     margin-top: 290px; }
@@ -3029,11 +3145,10 @@ footer {
     width: 36%; }
 
   .gallery {
-    padding-left: 60px; }
-    .gallery .item-foot {
-      width: 22.7%;
+    width: 1012px; }
+    .gallery .col3 {
       float: left;
-      margin: 20px; }
+      margin: 10px; }
 
   .item-container {
     width: 80%;
@@ -3056,18 +3171,8 @@ footer {
       .item-container aside .btn {
         margin: 0; }
     .item-container .donation-info {
-      margin: 50px auto;
-      width: 80%; }
-      .item-container .donation-info .donate-icon4 {
-        width: 120px;
-        margin: 0 30px 40px 30px;
-        display: inline-block; }
-      .item-container .donation-info p {
-        font-size: 16px;
-        font-size: 1em;
-        width: 70%;
-        margin: 0 0 0 20px;
-        display: inline-block; }
+      margin: 30px auto;
+      width: 70%; }
 
   .cart-container {
     width: 100%; }
