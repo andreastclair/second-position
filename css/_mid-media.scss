@@ -63,7 +63,7 @@ header {
 			margin: 60px 0 0 40px;
 			max-width: 300px;
 			// background-color: $dkgreen;
-			background-color: rgba(106,210,176,0.5);
+			background-color: rgba(106,210,176,0.7);
 			padding: 20px;
 			color: $black;
 			text-align: center;
@@ -344,8 +344,9 @@ header {
 		}
 	}
 	.btn {
-		width: 45%;
-		margin: 0 2%;
+		// width: 45%;
+		margin: 0 auto;
+		display: block;
 	}
 }
 
