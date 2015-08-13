@@ -664,7 +664,7 @@ header {
 // ===================================
 
 footer {
-	// box-sizing: border-box;
+	position: 0;
 	width: 100%;
 	border-top: 1px solid $yellow;
 	background-color: $ltblack;
