@@ -3039,7 +3039,7 @@ footer {
     width: 80%; }
     .dashboard .icon-container {
       width: 620px;
-      margin: 0 auto; }
+      margin: 40px auto; }
       .dashboard .icon-container .dashcon {
         margin: 3% 4%;
         display: inline-block; }
